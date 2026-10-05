@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -53,6 +54,11 @@
         #101010;
     }
 
+    .hero-content {
+      width: 100%;
+      max-width: 700px;
+    }
+
     .logo {
       font-size: 86px;
       font-weight: normal;
@@ -84,8 +90,18 @@
       color: #ddd8cf;
     }
 
+    .hero-image {
+      display: block;
+      width: 80%;
+      max-width: 430px;
+      max-height: 520px;
+      object-fit: contain;
+      margin: 35px auto 25px;
+      border-radius: 4px;
+    }
+
     .scroll {
-      margin-top: 65px;
+      margin-top: 45px;
       font-size: 11px;
       letter-spacing: 4px;
       color: #aaa49a;
@@ -124,6 +140,44 @@
     }
 
     /* =========================
+       IMÁGENES
+       ========================= */
+
+    .section-image {
+      display: block;
+      width: 100%;
+      max-height: 500px;
+      object-fit: cover;
+      margin: 0 auto 35px;
+      border: 1px solid #333;
+    }
+
+    .botanico-image {
+      width: 100%;
+      height: 190px;
+      object-fit: cover;
+      margin-bottom: 20px;
+    }
+
+    .recipe-image {
+      display: block;
+      width: 100%;
+      max-height: 500px;
+      object-fit: cover;
+      margin-bottom: 30px;
+      border: 1px solid #333;
+    }
+
+    .bottle-image {
+      display: block;
+      width: 80%;
+      max-width: 420px;
+      max-height: 550px;
+      object-fit: contain;
+      margin: 0 auto 35px;
+    }
+
+    /* =========================
        BOTÁNICOS
        ========================= */
 
@@ -135,13 +189,20 @@
     }
 
     .botanico {
-      padding: 25px 20px;
+      padding: 0 0 25px;
       text-align: center;
       background: #181818;
       border: 1px solid #333;
+      overflow: hidden;
+    }
+
+    .botanico h3 {
+      padding: 0 20px;
+      margin-top: 5px;
     }
 
     .botanico p {
+      padding: 0 20px;
       font-size: 15px;
       margin-bottom: 0;
     }
@@ -217,6 +278,15 @@
       margin-right: auto;
     }
 
+    .closing-image {
+      display: block;
+      width: 100%;
+      max-height: 450px;
+      object-fit: cover;
+      margin: 0 auto 40px;
+      border: 1px solid #333;
+    }
+
     .firma {
       font-size: 42px;
       letter-spacing: 8px;
@@ -279,11 +349,19 @@
         width: 86%;
       }
 
+      .hero-image {
+        width: 90%;
+        max-height: 430px;
+      }
+
+      .bottle-image {
+        width: 90%;
+      }
+
     }
 
   </style>
 </head>
-
 
 <body>
 
@@ -294,7 +372,7 @@
 
 <header>
 
-  <div>
+  <div class="hero-content">
 
     <div class="logo">
       V7
@@ -309,6 +387,12 @@
     <p class="intro">
       Un gin artesanal creado en la Patagonia Argentina.
     </p>
+
+    <img
+      class="hero-image"
+      src="imagen botella.jpeg"
+      alt="Gin V7 · 7 Vidas"
+    >
 
     <div class="scroll">
       Descubrí V7 ↓
@@ -372,7 +456,14 @@
 
     <div class="botanicos">
 
+
       <div class="botanico">
+
+        <img
+          class="botanico-image"
+          src="imagen enebro.jfif"
+          alt="Enebro"
+        >
 
         <h3>
           Enebro
@@ -388,6 +479,12 @@
 
       <div class="botanico">
 
+        <img
+          class="botanico-image"
+          src="imagen cardamomo.jfif"
+          alt="Cardamomo"
+        >
+
         <h3>
           Cardamomo
         </h3>
@@ -398,6 +495,7 @@
         </p>
 
       </div>
+
 
     </div>
 
@@ -420,6 +518,12 @@
 
 
     <div class="receta">
+
+      <img
+        class="recipe-image"
+        src="copa gin tonic.jpeg"
+        alt="Gin Tonic V7"
+      >
 
       <h3>
         Gin Tonic V7
@@ -471,6 +575,12 @@
     <h2>
       La botella
     </h2>
+
+    <img
+      class="bottle-image"
+      src="imagen botella.jpeg"
+      alt="Botella Gin V7 · 7 Vidas"
+    >
 
 
     <div class="datos">
@@ -535,6 +645,12 @@
 
   <div class="container cierre">
 
+    <img
+      class="closing-image"
+      src="cara gato.png"
+      alt="V7 · 7 Vidas"
+    >
+
     <h2>
       Un momento para compartir
       con un gin que te acompaña
@@ -593,3 +709,4 @@
 
 </body>
 </html>
+```
